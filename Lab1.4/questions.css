@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    word-break:keep-all;
+    text-align: justify;
+}
+
+#content form{
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    transition: .9s ease;
+}
+
+#content ul {
+    list-style-type: decimal;
+    
+}
+
+#content li {
+    padding-bottom: 20px;
+}
+
+
+#content #list-header {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.polaroid {
+    font-size: 18px;
+    padding: 5px;
+    margin: 10px 20px 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    transition: .9s ease;
+}
+
+span {
+    width: 20%;
+    padding: 0 30px 0 0;
+    font-weight: bolder;
+}
+
+label{
+    padding: 10px 30px 10px 0;
+}
+
+div#footer {
+    clear: both;
+    width: 100%
+}
+
+div#footer {
+    background: #42444e;
+    color: #fff;
+    height: 60px;
+}
+
+.btn{
+    padding: 15px 15px 15px 15px;
+    border-color: black;
+    border-width: 0;
+    border-radius: 8px;
+    background-color: #0fb900;
+    color: #fff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+}
+
+.btn:hover{
+    background-color: #0c8b00;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    [class*="polaroid"] {
+        background-color: floralwhite;
+        margin-left: 0;
+    }
+
+    #content form {
+        width: 90%;
+    }
+}

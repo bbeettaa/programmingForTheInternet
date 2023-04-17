@@ -1,0 +1,121 @@
+root {
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+}
+
+logo {
+	background-image: url('../img/nau_logo.jpg');
+	height: 100px;
+	text-align: center;
+	border: #111;
+	border-width: 10px;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	display: block;
+}
+
+logo-text {
+	float: left;
+	margin-left: 50px;
+	font-size: 32px;
+	line-height: 107px;
+	font-weight: bold;
+
+}
+
+nav-menu {
+	font: menu;
+	float: left;
+	margin: 0 0 25px 0;
+	font-size: 23px;
+	padding: 10px 0 10px 0;
+
+	display: block;
+	width: 100%;
+	color: white;
+
+	background-color: #333;
+}
+
+nav-menu menu {
+	padding: 10px 20px 10px 20px;
+}
+
+nav-menu menu#active {
+	background-color: #fff;
+	color: #111;
+}
+
+nav-menu menu:hover:not(nav-menu menu#active) {
+	background-color: #111;
+}
+
+table {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 45%;
+	margin-top: 10px;
+}
+
+table-header {
+	font-size: 30px;
+	margin: 20px 0 20px 0;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+}
+
+row {
+	font-size: 18px;
+	padding: 5px;
+	width: 100%;
+	background-color: white;
+	margin-bottom: 25px;
+	transition: .5s;
+	display: block;
+	padding: 10px;
+}
+
+row:hover {
+	border-radius: 15px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+	background-color: #00000015;
+	transform: scale(1.05);
+}
+
+row-header {
+	font-size: 20px;
+	font-weight: bold;
+	display: block;
+	margin: 0 0 15px 0;
+}
+
+
+
+
+capitalize {
+	text-decoration: capitalize;
+	text-transform: capitalize;
+	font-family: 'Courier New', Courier, monospace;
+	color: #e07171;
+}
+
+overline {
+	text-decoration: overline;
+	word-spacing: 10px;
+}
+
+underline {
+	text-decoration: underline;
+	font-style: normal;
+	font: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+row#r3 row-text {
+	color: crimson;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

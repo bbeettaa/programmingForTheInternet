@@ -1,0 +1,52 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <style>
+    .form-container {
+      background-image: url(../img/virtual-meeting-1920x889-3128730265.jpg);
+      background-size: cover;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+  <title>Lab1.4</title>
+</head>
+
+<body>
+
+  <div class="form-container text-center">
+      <div class="shadow-lg p-5 rounded shadow bg-light">
+        <form method="post" action="../Lab1.4/question.html">
+          <h2>Увійти</h2>
+
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input type="text" required name="login" class="form-control text-center" placeholder="Логін"
+              style="width: 200px">
+          </div><br>
+          
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+            <input type="password" required name="password" class="form-control text-center" placeholder="Пароль"
+              style="width: 200px">
+          </div><br>
+
+          <div class="form-group">
+            <input type="submit" value="Ввійти" class="btn btn-success" style="width: 200px">
+            <br><br>
+            <a href="#" class="btn btn-info" style="width: 200px">Забули пароль?</a>
+          </div>
+        </form>
+      </div>
+  </div>
+
+
+
+</body>
+
+</html>

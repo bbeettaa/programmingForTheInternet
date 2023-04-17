@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="index.css">
+  <script type="text/javascript" src="scripts.js"></script>
+
+  <script>
+
+
+    var gifArray = ['../img/gif/frame_00_delay-0.1s.jpg', '../img/gif/frame_01_delay-0.1s.jpg', '../img/gif/frame_02_delay-0.1s.jpg',
+      '../img/gif/frame_03_delay-0.1s.jpg', '../img/gif/frame_04_delay-0.1s.jpg', '../img/gif/frame_05_delay-0.1s.jpg', '../img/gif/frame_06_delay-0.1s.jpg',
+      '../img/gif/frame_07_delay-0.1s.jpg', '../img/gif/frame_08_delay-0.1s.jpg', '../img/gif/frame_09_delay-0.1s.jpg', '../img/gif/frame_10_delay-0.1s.jpg',
+      '../img/gif/frame_11_delay-0.1s.jpg', '../img/gif/frame_12_delay-0.1s.jpg', '../img/gif/frame_13_delay-0.1s.jpg', '../img/gif/frame_14_delay-0.1s.jpg',
+      '../img/gif/frame_15_delay-0.1s.jpg', '../img/gif/frame_16_delay-0.1s.jpg', '../img/gif/frame_17_delay-0.1s.jpg', '../img/gif/frame_18_delay-0.1s.jpg'];
+
+
+
+
+    window.onload = function () {
+      runningLine();
+      runningLine2();
+      startGif(115);
+
+      var myVar = setInterval(function () {
+        startRunning(document.getElementById('running'))
+      }, 1);
+    };
+
+  </script>
+
+  <title>Lab3.4</title>
+</head>
+
+<body>
+  <div id="logo">
+    <h1>Lab 3.4 Онлайн конференції</h1>
+  </div>
+
+  <div style="float: left;">
+    <div id="running">бумс-бумс-бумс</div>
+  </div>
+
+
+
+  <div style="clear: both; margin: 0 auto 0 auto; display:flex; width: 50%;">
+    <span id='move-me-1' style='position: relative; border: 1px dashed white; z-index: 1;'>Я рухаюся!</span>
+  </div>
+
+  <div style="clear: both; margin: 20px auto 0 auto; display:flex; width: 50%;">
+    <div style='text-align: center;'>
+      <h3>Слайд-шоу</h3>
+      <img id='slide' src='../img/gif/frame_00_delay-0.1s.jpg' alt='фотографія' />
+    </div>
+  </div>
+
+  <span id='move-me-2' style='position: absolute; border: 1px dashed white; z-index: 1; margin-top: 35%;'>Рядок, що рухається!</span>
+
+  <div style="clear: both; margin: 0 auto 60px auto; display:flex; width: 50%;">
+    <button class="btn1" id="expression" onclick="sortArrayAndStartGif()">Початковий стан</button>
+    <button class="btn1" id="expression" onclick="sortRandomArrayAndStartGif()">Випадковий стан</button>
+    <input type="range" min="1" max="1000" value="115" id="gifSlider" oninput="startGif(this.value)"
+      style="margin: 0 0 0 25px;">
+  </div>
+
+  <div id='shapesAnimatiom'
+    style="clear: both; margin: 60px auto 0 auto; display:flex; position: relative; width: 600px; height: 300px; background-color: yellow;">
+    <div>
+      <img id='triangle' src='../img/triangle.png' alt='фотографія' style=" margin: 200px 100px 0 0;" />
+      <img id='rectangle' src='../img/rectangle.png' alt='фотографія'
+        style="position: absolute;  bottom: 0; right: 0; " />
+      <img id='circle' src='../img/circle.png' alt='фотографія'
+        style=" position: absolute;margin: 200px 0 0 0; display: none;" />
+    </div>
+    <label style="position: absolute;bottom: -20px; left: 0;">Малюнок</label>
+  </div>
+
+
+  <div style="clear: both; margin: 5px auto 20px auto; display:flex; width: 50%;">
+    <button class="btn1" id="expression" onclick="startAnimation()">Почати</button>
+  </div>
+
+  <div style="clear: both; margin: 20px auto 200px auto; display:flex; width: 50%;"></div>
+
+</body>
+
+</html>

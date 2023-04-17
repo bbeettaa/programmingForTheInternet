@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="lab2.2.css"?>
+<!DOCTYPE root [
+    <!ELEMENT root (logo,nav-menu,table)>
+    <!ELEMENT logo (logo-text)>
+    <!ELEMENT logo-text (#PCDATA)>
+
+    <!ELEMENT nav-menu (menu+)>
+    <!ELEMENT menu (#PCDATA)>
+    <!ATTLIST menu is-unique (active|not-active) "not-active">
+
+
+    <!ELEMENT table (table-header, row*)>
+    <!ELEMENT table-header (#PCDATA)>
+
+    <!ELEMENT row (name, addres, passport)>
+    <!ATTLIST row id ID #REQUIRED>
+
+    <!ELEMENT passport (name, sex, birth, date-isue, validity, nationality, 
+    num-passport, rnocpp)>
+
+    <!ELEMENT name (#PCDATA|p)*>
+    <!ELEMENT addres (#PCDATA|p)*>
+    <!ELEMENT sex (#PCDATA|p)*>
+    <!ELEMENT birth (#PCDATA|p)*>
+    <!ELEMENT date-isue (#PCDATA|p)*>
+    <!ELEMENT validity (#PCDATA|p)*>
+    <!ELEMENT nationality (#PCDATA|p)*>
+    <!ELEMENT num-passport (#PCDATA|p)*>
+    <!ELEMENT rnocpp (#PCDATA|p)*>
+    <!ELEMENT p (#PCDATA)>
+
+    <!ENTITY name "ФІО">
+    <!ENTITY addres "Адреса">
+    <!ENTITY sex "Стать">
+    <!ENTITY birth "Дата народження">
+    <!ENTITY date-isue "Дата видачі">
+    <!ENTITY validity "Дійсний до">
+    <!ENTITY nationality "Громадянство">
+    <!ENTITY num-passport "Номер">
+    <!ENTITY rnocpp "РКОНПП">
+]>
+
+<root>
+    <logo>
+        <logo-text>Lab 2.2 Онлайн конференції</logo-text>
+    </logo>
+
+    <nav-menu>
+        <menu>Головна</menu>
+        <menu>Підписки</menu>
+        <menu is-unique="active">Про нас</menu>
+    </nav-menu>
+
+    <table>
+        <table-header>Дані підпису до бібліотеки</table-header>
+        <row id="r1">
+            <name>&name;: <p>Іван Іванович Іванов</p></name>
+            <addres>&addres;: <p>м. Київ, пр. Проспект, буд. 1, кв. 1</p></addres>
+            <passport>
+                <name>&name;: <p>Іван Іванович Іванов</p></name>
+                <sex>&sex;: <p>М</p></sex>
+                <birth>&birth;: <p>20.03.1995</p></birth>
+                <date-isue>&date-isue;: <p>11.05.2008</p></date-isue>
+                <validity>&validity;: <p>11.05.2018</p></validity>
+                <nationality>&nationality;: <p>UKR</p></nationality>
+                <num-passport>&num-passport;: <p>123456-0123</p></num-passport>
+                <rnocpp>&rnocpp;: <p>123456</p></rnocpp>
+            </passport>
+        </row>
+
+        <row id="r2">
+            <name>&name;: <p>Олексаднр Володимирович Мельнік</p></name>
+            <addres>&addres;: <p>м. Київ, пр. Проспект, буд. 1, кв. 1</p></addres>
+            <passport>
+                <name>&name;: <p>Олексаднр Володимирович</p></name>
+                <sex>&sex;: <p>М</p></sex>
+                <birth>&birth;: <p>20.03.1995</p></birth>
+                <date-isue>&date-isue;: <p>11.05.2008</p></date-isue>
+                <validity>&validity;: <p>11.05.2018</p></validity>
+                <nationality>&nationality;: <p>UKR</p></nationality>
+                <num-passport>&num-passport;: <p>123456-0123</p></num-passport>
+                <rnocpp>&rnocpp;: <p>123456</p></rnocpp>
+            </passport>
+        </row>
+
+        <row id="r3">
+            <name>&name;: <p>Олег Євгенович Ткаченко</p></name>
+            <addres>&addres;: <p>м. Київ, пр. Проспект, буд. 1, кв. 1</p></addres>
+            <passport>
+                <name>&name;: <p>Іван Іванов Іванович</p></name>
+                <sex>&sex;: <p>М</p></sex>
+                <birth>&birth;: <p>20.03.1995</p></birth>
+                <date-isue>&date-isue;: <p>11.05.2008</p></date-isue>
+                <validity>&validity;: <p>11.05.2018</p></validity>
+                <nationality>&nationality;: <p>UKR</p></nationality>
+                <num-passport>&num-passport;: <p>123456-0123</p></num-passport>
+                <rnocpp>&rnocpp;: <p>123456</p></rnocpp>
+            </passport>
+        </row>
+
+        <row id="r4">
+            <name>&name;: <p>В'ячеслав Юрійович Кравченко</p></name>
+            <addres>&addres;: <p>м. Київ, пр. Проспект, буд. 1, кв. 1</p></addres>
+            <passport>
+                <name>&name;: <p>Іван Іванов Іванович</p></name>
+                <sex>&sex;: <p>М</p></sex>
+                <birth>&birth;: <p>20.03.1995</p></birth>
+                <date-isue>&date-isue;: <p>11.05.2008</p></date-isue>
+                <validity>&validity;: <p>11.05.2018</p></validity>
+                <nationality>&nationality;: <p>UKR</p></nationality>
+                <num-passport>&num-passport;: <p>123456-0123</p></num-passport>
+                <rnocpp>&rnocpp;: <p>123456</p></rnocpp>
+            </passport>
+        </row>
+
+    </table>
+</root>
